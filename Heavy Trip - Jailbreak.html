@@ -64,7 +64,10 @@ Im Süden des Zellentraktes befindet sich ein Durchgang welcher zu einem angrenz
 [[in den Esssaal gehen-&gt;Esssaal]]</tw-passagedata><tw-passagedata pid="9" name="Osten überprüfen" tags="" position="1055,327" size="100,100">Im Osten befindet sich ebenfalls eine Tür, welche in den Aussenhof und zur Werkstatt führt. Wenn man keine Arbeit in der Werkstatt zu verrichten hat, kann man durch diese Tür nur zwischen 14:00 und 15:00 Uhr um in den Aussenhof zu gelangen.
 Leider warst du bisher zu faul, um dir einen Job zu besorgen(if: $oula_wach)[ und Oula hat aufgrund seiner Agressionsprobleme keinen Zutritt zur Werkstatt].
 
-[[zurück-&gt;Zellentrakt]]</tw-passagedata><tw-passagedata pid="10" name="Innenhof" tags="" position="984,464" size="100,100">Du gehst in den Innenhof. Xytrax und Lotvonen kommen auf dich zu.
+[[zurück-&gt;Zellentrakt]]</tw-passagedata><tw-passagedata pid="10" name="Innenhof" tags="" position="984,464" size="100,100">Du gehst in den Innenhof. Xytrax und Lotvonen kommen auf dich zu. *&quot;Na, auch schon wach? Wo hast du Oula gelassen?&quot;*, fragt Xytrax. *&quot;Den lässt du besser schlafen, du kennst ihn doch. Sonst rastet er nur wieder aus.&quot;, erwiedert Lotvonen.
+
+*&quot;Wir sollten in den Esssaal gehen&quot;*, schlägt Xytrax vor, *&quot;es ist bald Zeit fürs Frühstück!&quot;*
+
 (set: $with_buddies to true)
 [[gehe mit Xytrax und Lotvonen in den Esssaal-&gt;Esssaal]]</tw-passagedata><tw-passagedata pid="11" name="Esssaal" tags="" position="840,608" size="100,100">(if: $oula_wach)[
 (if: $with_buddies)[
@@ -101,7 +104,7 @@ Hinder der Tür befinded sich ein Pfad, welcher zum Gebäude mit der Küche und 
 [[gehe mit Oula in den Esssaal-&gt;Esssaal]]</tw-passagedata><tw-passagedata pid="14" name="Kein Festival" tags="" position="84,1130" size="100,100">&lt;h1&gt;ENDE&lt;/h1&gt;
 Ihr konntet leider nicht am Festival auftreten. Schade.
 
-[[erneut versuchen-&gt;Titel]]</tw-passagedata><tw-passagedata pid="15" name="Ausbrechen" tags="" position="1066,651" size="100,100">Xytrax sagt: *&quot;Ich arbeite in der Werkstatt. Dort gibt es einen Ausgang an welchem grosse Lastwagen Material anliefern und die Dinge, die wir Produzieren abholen. Wir könnten versuchen uns in einem dieser Lastwagen zu verstecken und so auszubrechen.&quot;*
+[[erneut versuchen-&gt;Titel]]</tw-passagedata><tw-passagedata pid="15" name="Ausbrechen" tags="" position="1816,437" size="100,100">Xytrax sagt: *&quot;Ich arbeite in der Werkstatt. Dort gibt es einen Ausgang an welchem grosse Lastwagen Material anliefern und die Dinge, die wir Produzieren abholen. Wir könnten versuchen uns in einem dieser Lastwagen zu verstecken und so auszubrechen.&quot;*
 
 Oula hat ebenfalls einen Vorschlag: *&quot;In der Wäscherei, wo ich arbeite, gibt es ebenfalls einen Ausgang. Die Lieferwagen welche dort ankommen sind fast gleich gross wie unser alter Van. Wir könnten den Fahrer überwältigen und den Van klauen!&quot;*
 
@@ -110,61 +113,67 @@ Oula hat ebenfalls einen Vorschlag: *&quot;In der Wäscherei, wo ich arbeite, gi
 Was meinst du dazu?
 [[&quot;Xytraxs Vorschlag klingt gut, da wird niemand verletzt!&quot;-&gt;Plan Werkstatt]]
 [[&quot;Mit dem Fahrer des Lieferwagens sollten wir locker fertig werden!&quot;-&gt;Plan Wäscherei]]
-[[&quot;Verkleiden wir uns und nehmen den Haupteingang!&quot;-&gt;Plan Haupteingang]]</tw-passagedata><tw-passagedata pid="16" name="Plan Werkstatt" tags="" position="845,878" size="100,100">*&quot;Also gut, der Plan sieht folgendermassen aus: Ich arbeite heute Nachmittag in der Werkstatt. Um 14:00 Uhr könnt ihr auf den Aussenhof, von welchem ihr zur Tür der Werkstatt kommt. Ich kann euch durch den unbewachten Eingang der Werkstatt hereinlassen. Ihr dürft euch aber von niemandem sehen lassen, auch nicht von andern Häftlingen! Es hat nur eine Wache in der Werkstatt, welche beim Ausgang steht und den Laderaum des Lastwagens überwacht. Wir müssen ihn ablenken, wenn wir in den Lastwagen einsteigen.&quot;*, sagt Xytrax. &quot;Wir lassen die Türe offen, so können andere Häftlinge herein kommen und die Wache muss die Türe schliessen. In dieser Zeit können wir in den Lastwagen schleichen.&quot;, fügt er weiter hinzu.
+[[&quot;Verkleiden wir uns und nehmen den Haupteingang!&quot;-&gt;Plan Haupteingang]]</tw-passagedata><tw-passagedata pid="16" name="Plan Werkstatt" tags="" position="1572,648" size="100,100">*&quot;Also gut, der Plan sieht folgendermassen aus: Ich arbeite heute Nachmittag in der Werkstatt. Um 14:00 Uhr könnt ihr auf den Aussenhof, von welchem ihr zur Tür der Werkstatt kommt. Ich kann euch durch den unbewachten Eingang der Werkstatt hereinlassen. Ihr dürft euch aber von niemandem sehen lassen, auch nicht von andern Häftlingen! Es hat nur eine Wache in der Werkstatt, welche beim Ausgang steht und den Laderaum des Lastwagens überwacht. Wir müssen ihn ablenken, wenn wir in den Lastwagen einsteigen.&quot;*, sagt Xytrax. &quot;Wir lassen die Türe offen, so können andere Häftlinge herein kommen und die Wache muss die Türe schliessen. In dieser Zeit können wir in den Lastwagen schleichen.&quot;, fügt er weiter hinzu.
 
 Bist du mit diesem Plan einverstanden?
 [[&quot;Alles klar, das hört sich nach einem guten Plan an!.&quot;-&gt;Werkstatt Plan angenommen]]
 [[&quot;Wie war das nochmal mit der Wäscherei?&quot;-&gt;Plan Wäscherei]]
-[[&quot;Vielleicht sollten wir doch besser den Haupteingang nehmen..&quot;-&gt;Plan Haupteingang]]</tw-passagedata><tw-passagedata pid="17" name="Plan Wäscherei" tags="" position="1072,789" size="100,100">Oula beschreibt euch seinen Plan: &quot;Ich muss direkt nach dem frühstück in die Wäscherei. Es wäre der perfekte Zeitpunkt da ausser mir kein anderer Häftling dort sein wird, ihr wisst ja, ich kann nicht so gut mit anderen Leuten umgehen.. Ihr müsst darauf achten, dass ihr den Esssaal zuletzt verlasst. Wenn ihr aus dem, Gebäude richtung Zellentrakt heraus kommt, könnt ihr richtung Westen über die Wiese zwischen dem Esssaal und dem Zellentrakt laufen und dann zur Tür der Wäscherei gelangen. Ich werde euch hereinlassen. Der Lieferwagen wird bald darauf neue Wäsche anliefern. Eine Wache bewacht den Ausgang. Wir überwältigen die Wache und den Fahrer und fahren ans Festival!&quot;
+[[&quot;Vielleicht sollten wir doch besser den Haupteingang nehmen..&quot;-&gt;Plan Haupteingang]]</tw-passagedata><tw-passagedata pid="17" name="Plan Wäscherei" tags="" position="1822,575" size="100,100">Oula beschreibt euch seinen Plan: &quot;Ich muss direkt nach dem frühstück in die Wäscherei. Es wäre der perfekte Zeitpunkt da ausser mir kein anderer Häftling dort sein wird, ihr wisst ja, ich kann nicht so gut mit anderen Leuten umgehen.. Ihr müsst darauf achten, dass ihr den Esssaal zuletzt verlasst. Wenn ihr aus dem, Gebäude richtung Zellentrakt heraus kommt, könnt ihr richtung Westen über die Wiese zwischen dem Esssaal und dem Zellentrakt laufen und dann zur Tür der Wäscherei gelangen. Ich werde euch hereinlassen. Der Lieferwagen wird bald darauf neue Wäsche anliefern. Eine Wache bewacht den Ausgang. Wir überwältigen die Wache und den Fahrer und fahren ans Festival!&quot;
 
 Bist du mit diesem Plan einverstanden?
 [[&quot;Sehr gut, aber wie überwältigen wird die Wache?&quot;-&gt;Plan Wäscherei angenommen]]
 [[&quot;Vielleicht sollten wir doch besser den Haupteingang nehmen..&quot;-&gt;Plan Haupteingang]]
-[[&quot;Durch die Werkstatt scheint mir der bessere Weg zu sein.&quot;-&gt;Plan Werkstatt]]</tw-passagedata><tw-passagedata pid="18" name="Plan Haupteingang" tags="" position="1259,902" size="100,100">Lotvonen erklärt euch selbstsicher seinen Plan: *&quot;Gleich nach dem Frühstück werde ich zur Tür im Suden, welche zum Haupteingang führt gehen. Ich weiss dass die Schnecke zu dieser Zeit immer dort postiert ist. Keine sorge, ich werde bestimmt an die Schlüssel herankommen, ohne dass sie etwas davon mitbekommt. Oula arbeitet nach dem Essen in der Wäscherei, er muss uns eine Verkleidung besorgen. Sobald wir die Schlüssel und die Verkleidung haben, können wir hier raus! Vielleicht sollten wir uns auch noch um ein Fluchtfahrzeug kümmern..&quot;*
+[[&quot;Durch die Werkstatt scheint mir der bessere Weg zu sein.&quot;-&gt;Plan Werkstatt]]</tw-passagedata><tw-passagedata pid="18" name="Plan Haupteingang" tags="" position="2009,688" size="100,100">Lotvonen erklärt euch selbstsicher seinen Plan: *&quot;Gleich nach dem Frühstück werde ich zur Tür im Suden, welche zum Haupteingang führt gehen. Ich weiss dass die Schnecke zu dieser Zeit immer dort postiert ist. Keine sorge, ich werde bestimmt an die Schlüssel herankommen, ohne dass sie etwas davon mitbekommt. Oula arbeitet nach dem Essen in der Wäscherei, er muss uns eine Verkleidung besorgen. Sobald wir die Schlüssel und die Verkleidung haben, können wir hier raus! Vielleicht sollten wir uns auch noch um ein Fluchtfahrzeug kümmern..&quot;*
 
 Bist du mit diesem Plan einverstanden?
 [[&quot;Das wäre der legendärste Gefängnisausbruch aller Zeiten! Auf gehts!&quot;-&gt;Plan Haupteingang angenommen]]
 [[&quot;Durch die Werkstatt scheint mir der bessere Weg zu sein.&quot;-&gt;Plan Werkstatt]]
-[[&quot;Wie war das nochmal mit der Wäscherei?&quot;-&gt;Plan Wäscherei]]</tw-passagedata><tw-passagedata pid="19" name="Werkstatt Plan angenommen" tags="" position="844,1038" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="20" name="Plan Wäscherei angenommen" tags="" position="1055,976" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Plan Haupteingang angenommen" tags="" position="1455,1002" size="100,100">*&quot;Wie viele Uniformen soll ich mitbringen?&quot;* fragt Oula.
+[[&quot;Wie war das nochmal mit der Wäscherei?&quot;-&gt;Plan Wäscherei]]</tw-passagedata><tw-passagedata pid="19" name="Werkstatt Plan angenommen" tags="" position="1366,762" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="20" name="Plan Wäscherei angenommen" tags="" position="1731,772" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Plan Haupteingang angenommen" tags="" position="2009,852" size="100,100">*&quot;Wie viele Uniformen soll ich mitbringen?&quot;* fragt Oula.
 
 [[&quot;Bring 2 Uniformen mit, dann können wir vortäuschen, dass wir in ein anderes Gefängnis verlegt werden.&quot;-&gt;2 Uniformen klauen]]
-[[&quot;Mit 4 Uniformen können wir uns alle als Wachen ausgeben und einfach herausspazieren.&quot;-&gt;4 Uniformen klauen]]</tw-passagedata><tw-passagedata pid="22" name="2 Uniformen klauen" tags="" position="1379,1152" size="100,100">*&quot;Okey, ich klaue also 2 Uniformen&quot;*, bestätigt Oula.
+[[&quot;Mit 4 Uniformen können wir uns alle als Wachen ausgeben und einfach herausspazieren.&quot;-&gt;4 Uniformen klauen]]</tw-passagedata><tw-passagedata pid="22" name="2 Uniformen klauen" tags="" position="1933,1001" size="100,100">*&quot;Okey, ich klaue also 2 Uniformen&quot;*, bestätigt Oula.
 *&quot;Wie kommen wir dann zum Festival wenn wir draussen sind?&quot;*, fragt Xytrax.
 (set: $uniformen to 2)
 (link: &quot;\&quot;Wir nehmen einfach die Beine in die Hand!\&quot;&quot;)[(set: $fluchtfahrzeug to false)(goto: &quot;Fahrzeug gewählt&quot;)]
-(link: &quot;\&quot;Wir sollten uns ein Fluchtfahrzeug besorgen.\&quot;&quot;)[(set: $fluchtfahrzeug to true)(goto: &quot;Fahrzeug gewählt&quot;)]</tw-passagedata><tw-passagedata pid="23" name="4 Uniformen klauen" tags="" position="1530,1152" size="100,100">*&quot;Okey, ich klaue also 4 Uniformen&quot;*, bestätigt Oula.
+(link: &quot;\&quot;Wir sollten uns ein Fluchtfahrzeug besorgen.\&quot;&quot;)[(set: $fluchtfahrzeug to true)(goto: &quot;Fahrzeug gewählt&quot;)]</tw-passagedata><tw-passagedata pid="23" name="4 Uniformen klauen" tags="" position="2084,1002" size="100,100">*&quot;Okey, ich klaue also 4 Uniformen&quot;*, bestätigt Oula.
 *&quot;Wie kommen wir dann zum Festival wenn wir draussen sind?&quot;*, fragt Xytrax.
 (set: $uniformen to 4)
-(link: &quot;\&quot;Wir nehmen einfach die Beine in die Hand!\&quot;&quot;)[(set: $fluchtfahrzeug to 0)(goto: &quot;Fahrzeug gewählt&quot;)]
-(link: &quot;\&quot;Wir sollten uns ein Fluchtfahrzeug besorgen.\&quot;&quot;)[(set: $fluchtfahrzeug to 1)(goto: &quot;Fahrzeug gewählt&quot;)]
-(link: &quot;\&quot;Wir klauen ein Polizeiauto!\&quot;&quot;)[(set: $fluchtfahrzeug to &quot;polizeiauto&quot;)(goto: &quot;Fahrzeug gewählt&quot;)]</tw-passagedata><tw-passagedata pid="24" name="Fahrzeug gewählt" tags="" position="1451,1291" size="100,100">(set: $fahrzeug_bereit to false)
+(link: &quot;\&quot;Wir nehmen einfach die Beine in die Hand!\&quot;&quot;)[(set: $fluchtfahrzeug to false)(goto: &quot;Fahrzeug gewählt&quot;)]
+(link: &quot;\&quot;Wir sollten uns ein Fluchtfahrzeug besorgen.\&quot;&quot;)[(set: $fluchtfahrzeug to true)(goto: &quot;Fahrzeug gewählt&quot;)]</tw-passagedata><tw-passagedata pid="24" name="Fahrzeug gewählt" tags="" position="2004,1116" size="100,100">(set: $fahrzeug_bereit to false)
+(set: $xytrax_ok to true)
 Es ist Zeit den Esssaal zu verlassen. Oula geht durch die Küche in die Wäscherei. Lotvonen geht mit dir und Xytrax in den Zellentrakt zurück und verabschiedet sich mit einem Grinsen. *&quot;Viel Erfolg&quot;*, ruft ihm Xytrax hinterher, *&quot;und natürlich auch viel Spass!&quot;*
 (if: $fluchtfahrzeug is true)[Zu dir gewandt sagt er: *&quot;Wir müssen jemanden anrufen, der uns abholt. Das öffentliche Telefon im Innenhof wird von den schwulen Schwestern kontrolliert. Eine Gang, mit gewissen Vorlieben.. Der Name sagt schon alles. Die andere Möglichkeit wäre der alte Jukka in Zelle 43, soweit ich weiss hat er ein Mobiltelefon aber er ist kein sehr geselliger Kerl.&quot;*
 
 [[Versuche das öffentliche Telefon zu benutzen-&gt;Öffentliches Telefon]]
 [[Gehe zum alten Jukka-&gt;Jukka]]]
-[[Gehe in deine Zelle um auf die anderen zu warten-&gt;Warten in der Zelle]]</tw-passagedata><tw-passagedata pid="25" name="Warten in der Zelle" tags="" position="1416,2056" size="100,100">(if: $fahrzeug_bereit)[Sehr gut, das Fluchtfahrzeug ist organisiert.](else:)[(if: $fluchtfahrzeug)[Das hätte besser laufen können.]] Du gehts mit Xytrax in deine Zelle. (if: $fahrzeug_bereit)[Kurz später](else:)[Nach einer Weile, die dir wie eine Ewigkeit vorkommt,] erscheint Oula in der Zellentür. Er sieht gestresst aus und hat einen für seine Körpermasse unglaublich grossen Bauch. Er zieht die $uniformen Uniformen unter seinem Overall hervor und wirft sie dir zu. In dem Moment taucht eine weitere Gestalt in deinen Augenwinkeln auf. Erschrocken blickst du hoch. Es ist Lotvonen. Mit dem grössten Grinsen der Welt stolziert er in die Zelle. Er zieht eine Hand aus der Tasche seines Overalls, daran baumelt ein Schlüsselbund.
+[[Gehe in deine Zelle um auf die anderen zu warten-&gt;Warten in der Zelle]]</tw-passagedata><tw-passagedata pid="25" name="Warten in der Zelle" tags="" position="2028,1739" size="100,100">(if: $fahrzeug_bereit)[Sehr gut, das Fluchtfahrzeug ist organisiert.](else:)[(if: $fluchtfahrzeug)[Das hätte besser laufen können.]] (if: !$xytrax_ok)[Auf dem Weg zu deiner Zelle triffst du Xytrax. Er läuft ungewöhnlich breitbeinig und sein Gesicht sieht noch düsterer aus als sonst. ]Du gehts mit Xytrax in deine Zelle. (if: $fahrzeug_bereit)[Kurz später](else:)[Nach einer Weile, die dir wie eine Ewigkeit vorkommt,] erscheint Oula in der Zellentür. Er sieht gestresst aus und hat einen für seine Körpermasse unglaublich grossen Bauch. Er zieht die $uniformen Uniformen unter seinem Overall hervor und wirft sie dir zu. In dem Moment taucht eine weitere Gestalt in deinen Augenwinkeln auf. Erschrocken blickst du hoch. Es ist Lotvonen. Mit dem grössten Grinsen der Welt stolziert er in die Zelle. Er zieht eine Hand aus der Tasche seines Overalls, daran baumelt ein Schlüsselbund.
 
 *&quot;Jetzt aber schnell, Zieht die Uniformen an und dann nichts wie raus hier!&quot;*, sagt Oula. (if: $uniformen is 4)[Ihr zieht euch alle eine Wärteruniform an](else:)[Lotvonen und Xytrax ziehen eine Wärteruniform an] und ihr bewegt euch Richtung Haupteingang.
 
-[[Gehe zum Haupteingang-&gt;Haupteingang]]</tw-passagedata><tw-passagedata pid="26" name="Öffentliches Telefon" tags="" position="1331,1441" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="27" name="Jukka" tags="" position="1571,1440" size="100,100">Ihr erreicht Jukkas Zelle. Er liegt wie jeden Tag auf seiner Schlafbarracke und döst vor sich hin.
+[[Gehe zum Haupteingang-&gt;Haupteingang]]</tw-passagedata><tw-passagedata pid="26" name="Öffentliches Telefon" tags="" position="1881,1187" size="100,100">Ihr begebt euch in den Innenhof und steuert geradewegs auf das Telefon zu. Kurz bevor ihr es erreicht, werdet ihr von drei Gestalten aufgehalten. *&quot;Das Telefon gehört uns, ihr Süssen, das weiss doch jeder!&quot;*, säuselt einer der drei mit einer rauhen stimme die von jahrelangem Kettenrauchen zeugt. Es ist ein dicker Häftling, schätzungsweise mitte 50. Er hat die Arme seines Overalls abgetrennt und den Overall in der mitte geteilt und gekürtzt, so dass er eine Art bauchfreies Oberteil anhat. Seine Wampe macht den Anbilck kein Stück besser. Seine zwei Kumpane stehen ihm in sachen Mode in nichts nach.
+*&quot;Wenn ihr das Telefon benutzen wollt, müsst ihr dafür bezahlen, ihr kleinen Zuckermäuschen. Du,&quot;*, der Dicke zeigt auf Xytrax, *&quot;du siehst lecker aus.&quot;*
+Xytrax schaut dich mit einem Blick an, den du so noch nie von ihm gesehen hast. Eine Mischung zwischen Unbehagen, Ekel und sogar ein klein wenig Angst scheinst du in seinem Blick zu erkennen.
 
-[[&#96;&#96;*klopf klopf*&#96;&#96;-&gt;Jukka aufgeweckt]]</tw-passagedata><tw-passagedata pid="28" name="Jukka aufgeweckt" tags="" position="1571,1591" size="100,100">*&quot;Verdammte Scheisse, was wollt ihr hier!?&quot;*, Jukka scheint sichtlich genervt. Xytrax erklährt ihm eure Situation und der Alte lacht. *&quot;Ihr wollt hier ausbrechen? Sowas habe ich ja noch nie gehört! Ha! Also gut, eine Band seid ihr, was? Dann könnt ihr mir sicher etwas vorsingen, an was meine Ohren Gefallen finden.&quot;*
+[[Ermutige Xytrax-&gt;Oh no]]
+[[Rate Xytrax davon ab-&gt;Kein Telefon]]</tw-passagedata><tw-passagedata pid="27" name="Jukka" tags="" position="2164,1184" size="100,100">Ihr erreicht Jukkas Zelle. Er liegt wie jeden Tag auf seiner Schlafbarracke und döst vor sich hin.
+
+[[&#96;&#96;*klopf klopf*&#96;&#96;-&gt;Jukka aufgeweckt]]</tw-passagedata><tw-passagedata pid="28" name="Jukka aufgeweckt" tags="" position="2164,1335" size="100,100">*&quot;Verdammte Scheisse, was wollt ihr hier!?&quot;*, Jukka scheint sichtlich genervt. Xytrax erklährt ihm eure Situation und der Alte lacht. *&quot;Ihr wollt hier ausbrechen? Sowas habe ich ja noch nie gehört! Ha! Also gut, eine Band seid ihr, was? Dann könnt ihr mir sicher etwas vorsingen, an was meine Ohren Gefallen finden.&quot;*
 
 [[Sing euren *&lt;em style=&quot;color: red&quot;&gt;Symphonic Postapocalyptic Reindeer-Grinding Christ-Abusing Extreme War Pagan Fennoscandian Metal*-Song&lt;/em&gt;-&gt;Metal song]]
-[[Sing &lt;em style=&quot;color: cyan&quot;&gt;*&quot;Take Me Home, Country Roads&quot;* von John Denver&lt;/em&gt;-&gt;Country Roads]]</tw-passagedata><tw-passagedata pid="29" name="Metal song" tags="" position="1496,1726" size="100,100">(set: $fahrzeug_bereit to true)
+[[Sing &lt;em style=&quot;color: cyan&quot;&gt;*&quot;Take Me Home, Country Roads&quot;* von John Denver&lt;/em&gt;-&gt;Country Roads]]</tw-passagedata><tw-passagedata pid="29" name="Metal song" tags="" position="2138,1475" size="100,100">(set: $fahrzeug_bereit to true)
 Du gibst die tiefsten, markerschütterndsten Growls von dir, die du je in deinem Leben mit deinen Stimmbändern produziert hast. Satan wäre mächtig stolz auf dich und jeder anständige Christ hätte sich die Hosen voll gemacht! Du siehst, wie sich die Augen des Alten weiten und er dich etwas entsetzt anblickt, seine Miene sich jedoch rasch in ein breites Grinsen verwandelt.
 Als du fertig bist klatscht Jukka in die Hände: *&quot;Ihr seid doch verdammt nochmal völlig verrückt! Hier, nehmt mein Telefon, aber macht schnell, die Wärter nehmen mir das Ding sofort weg wen sie davon wind bekommen.&quot;*
 
-[[Anruf tätigen-&gt;Mia anrufen]]</tw-passagedata><tw-passagedata pid="30" name="Country Roads" tags="" position="1652,1728" size="100,100">&lt;h1&gt;*&quot;AUFHÖÖRENN!!!&quot;*&lt;/h1&gt;
+[[Anruf tätigen-&gt;Mia anrufen]]</tw-passagedata><tw-passagedata pid="30" name="Country Roads" tags="" position="2245,1472" size="100,100">&lt;h1&gt;*&quot;AUFHÖÖRENN!!!&quot;*&lt;/h1&gt;
 *&quot;Verschwindet hier, ihr Nichtskönner! Raus, hab ich gesagt!!&quot;*
 
 *&quot;Das war wohl nichts.. Oula sollte jeden Moment mit den Uniformen zurück sein.&quot;*, sagt Xytrax, *&quot;es ist besser, wir gehen.&quot;*
 
-[[Gehe in deine Zelle um die anderen zu treffen.-&gt;Warten in der Zelle]]</tw-passagedata><tw-passagedata pid="31" name="Mia anrufen" tags="" position="1441,1850" size="100,100">Du kennst nur eine Nummer auswendig, die der hübschen Blumenverkäuferin aus deinem Dorf, Mia. Also tippst du die Nummer ein und wartest. Nach einer kurzen Weile nimmt Mia ab.
+[[Gehe in deine Zelle um die anderen zu treffen.-&gt;Warten in der Zelle]]</tw-passagedata><tw-passagedata pid="31" name="Mia anrufen" tags="" position="2005,1461" size="100,100">Du kennst nur eine Nummer auswendig, die der hübschen Blumenverkäuferin aus deinem Dorf, Mia. Also tippst du die Nummer ein und wartest. Nach einer kurzen Weile nimmt Mia ab.
 Du erzählst ihr von eurem Plan und sie willigt (nach einigen Belehrungen, dass das eine dumme Idee sei) schliesslich ein, euch abzuholen.
 
-[[Gehe in deine Zelle um die anderen zu treffen-&gt;Warten in der Zelle]]</tw-passagedata><tw-passagedata pid="32" name="Haupteingang" tags="" position="1416,2206" size="100,100">Ihr erreicht die Tür im Süden des Zellentraktes, Lotvonen schliesst die Tür auf und ihr geht hindurch. Links von euch seht ihr die Besucherräume, rechts sind die Büros der Angestellten. Direkt vor euch befindet sich der Haupteingang.
+[[Gehe in deine Zelle um die anderen zu treffen-&gt;Warten in der Zelle]]</tw-passagedata><tw-passagedata pid="32" name="Haupteingang" tags="" position="2029,1873" size="100,100">&lt;!--for testing--&gt;(if: $oula_wach is 0)[(set: $oula_wach to true)](if: $uniformen is 0)[(set: $uniformen to 2)](if: $von_wache_gesehen is 0)[(set: $von_wache_gesehen to true)]
+Ihr erreicht die Tür im Süden des Zellentraktes, Lotvonen schliesst die Tür auf und ihr geht hindurch. Links von euch seht ihr die Besucherräume, rechts sind die Büros der Angestellten. Direkt vor euch befindet sich der Haupteingang.
 
 *&quot;Na wen haben wir denn da?&quot;*, ertönt eine Stimme neben euch. Es ist die Wache and er Türe.
 (if: $uniformen is 4)[(if: $von_wache_gesehen)[Du erkennst die Wache sofort. Es ist der selbe Typ, der (if: $oula_wach)[euch](else:)[dich] heute Morgen so hämisch angelacht hat. &quot;He! (if: $oula_wach)[Euch](else:)[Dich] kenne ich doch, (if: $oula_wach)[ihr wolltet](else:)[du wolltest] heute Morgen hier herausspatzieren! Woher habt ihr diese Uniformen?
@@ -173,15 +182,15 @@ Du erzählst ihr von eurem Plan und sie willigt (nach einigen Belehrungen, dass 
 
 [[Verlasst das Gebäude durch den Haupteingang-&gt;Haupteingang verlassen]]]](else:)&lt;!--Uniformen=2--&gt;[(if: $von_wache_gesehen)[Du erkennst die Wache sofort. Es ist der selbe Typ, der (if: $oula_wach)[euch](else:)[dich] heute Morgen so hämisch angelacht hat. *&quot;Oha! Heute morgen noch durch diese Tür spatzieren wollen und jetzt hier durch abgeführt werden. Welch eine Ironie. Ha! Schafft diese Gefangenen aus meinen Augen und bringt sie.. wo auch immer ihr sie hinbringen müsst.&quot;*, schnautzt er euch an und wendet sich wieder seinem Kreuzworträtsel zu.](else:)[*&quot;Schon wieder neue Wachen? Ihr kommt und geht ja wie die Fliegen. Diese Gefängnis ist auch nicht mehr, was es einmal war. Macht dass ihr die Tür wieder schliesst, aber dalli! Und schafft diese Gefangenen aus meinen Augen und bringt sie.. wo auch immer ihr sie hinbringen müsst.&quot;*, schnautzt er euch an und wendet sich wieder seinem Kreuzworträtsel zu.]
 
-[[Verlasst das Gebäude durch den Haupteingang-&gt;Haupteingang verlassen]]]</tw-passagedata><tw-passagedata pid="33" name="Haupteingang verlassen" tags="" position="1416,2356" size="100,100">Ihr tretet aus dem Haupteingan und der duft von Freiheit weht euch in Form eines frisch gedüngten Feldes eines anliegenden Bauernhofes entgegen. 
+[[Verlasst das Gebäude durch den Haupteingang-&gt;Haupteingang verlassen]]]</tw-passagedata><tw-passagedata pid="33" name="Haupteingang verlassen" tags="" position="2029,2023" size="100,100">Ihr tretet aus dem Haupteingan und der duft von Freiheit weht euch in Form eines frisch gedüngten Feldes eines anliegenden Bauernhofes entgegen. 
 (if: $fahrzeug_bereit)[Auf dem Parkplatz set ihr das Auto von Mia. Ihr geht darauf zu und steigt ein. Mia fährt sofort los.
 [[weiter-&gt;Win]]](else:)[&quot;Jetzt heisst es lauft was das Zeug hält!&quot;, ruft Xytrax. Ihr rennt los, so schnell ihr könnt. Ein Polizeiwagen fährt vor euch in die Einfahrt des Parkpletzes. Die Polizisten im Wagen sehen euch rennen und wittern sofort Verdacht. Sie Springen aus dem Wagen und ziehen ihre Waffen. &quot;Sofort stehen bleiben oder wir schiessen!&quot;]
 
 [[Bleib stehen-&gt;Stehen bleiben]]
-[[Lauf weiter-&gt;Weiter laufen]]</tw-passagedata><tw-passagedata pid="34" name="Stehen bleiben" tags="" position="1281,2503" size="100,100">Du bleibst wie angewurzelt stehen. &quot;So habe ich mir das aber nicht vorgestellt&quot;, stottert Lotvonen, der neben dir stehen geblieben ist.
+[[Lauf weiter-&gt;Weiter laufen]]</tw-passagedata><tw-passagedata pid="34" name="Stehen bleiben" tags="" position="1894,2170" size="100,100">Du bleibst wie angewurzelt stehen. &quot;So habe ich mir das aber nicht vorgestellt&quot;, stottert Lotvonen, der neben dir stehen geblieben ist.
 &quot;Oula! Bleib stehen!&quot;, schreit Xytrax. Aber Oula hört nicht auf ihn. Er rennt geradewegs und schreiend auf die Polizisten zu, welche ihm ihre Waffen entgegen halten.
 (set: $running to false)
-[[weiter-&gt;Oula rennt weiter]]</tw-passagedata><tw-passagedata pid="35" name="Weiter laufen" tags="" position="1412,2499" size="100,100">Lotvonen und Xytrax bleiben stehen. Neben dir rennt Oula. Mit einem ohrenbetäubenden Schrei rennt er direkt auf die Polizisten zu.
+[[weiter-&gt;Oula rennt weiter]]</tw-passagedata><tw-passagedata pid="35" name="Weiter laufen" tags="" position="2025,2166" size="100,100">Lotvonen und Xytrax bleiben stehen. Neben dir rennt Oula. Mit einem ohrenbetäubenden Schrei rennt er direkt auf die Polizisten zu.
 {
 	(set: $exited to false)
 	(set: $maxTime to 10)
@@ -214,11 +223,11 @@ Du erzählst ihr von eurem Plan und sie willigt (nach einigen Belehrungen, dass 
 	]
 }
 [Oula rennt weiter ($maxTime)]&lt;warning|
-[Wirf dich auf Oula]&lt;exit|</tw-passagedata><tw-passagedata pid="36" name="Win" tags="" position="1142,2320" size="100,100">Ihr habt es geschafft! Ihr seid aus dem Gefängnis entkommen und seid auf dem Weg zum Festival. Ein weiterer Legendärer Auftritt steht bevor und auch wenn ihr danach wieder geschnallt werdet, hat es sich auf jeden Fall gelohnt!
+[Wirf dich auf Oula]&lt;exit|</tw-passagedata><tw-passagedata pid="36" name="Win" tags="" position="1852,1862" size="100,100">&lt;h1&gt;ENDE&lt;/h1&gt;
 
-&lt;h1&gt;ENDE&lt;/h1&gt;
+Ihr habt es geschafft! Ihr seid aus dem Gefängnis entkommen und seid auf dem Weg zum Festival. Ein weiterer Legendärer Auftritt steht bevor!
 
-[[erneut spielen-&gt;Titel]]</tw-passagedata><tw-passagedata pid="37" name="Oula rennt weiter" tags="" position="1132,2502" size="100,100">&quot;STEHEN BLEIBEN HABE ICH GESAGT!&quot;, schreit einer der Polizisten.(if: $running)[ Du bleibst stehen.] Oula rennt weiter brüllend auf die Polizisten zu. Er ist nur noch wenige Meter von ihnen entfernt, da hörtst du einen lauten Knall.
+[[erneut spielen-&gt;Titel]]</tw-passagedata><tw-passagedata pid="37" name="Oula rennt weiter" tags="" position="1745,2169" size="100,100">&quot;STEHEN BLEIBEN HABE ICH GESAGT!&quot;, schreit einer der Polizisten.(if: $running)[ Du bleibst stehen.] Oula rennt weiter brüllend auf die Polizisten zu. Er ist nur noch wenige Meter von ihnen entfernt, da hörtst du einen lauten Knall.
 
 *&#96;&#96;*Peng!*&#96;&#96;*
 *&#96;&#96;*Peng!* *Peng!*&#96;&#96;*
@@ -228,7 +237,17 @@ Die Polizisten kommen mit erhobenen Waffen auf euch zu, hinter dir hörst du Lot
 
 Das wars dann wohl mit eurer Band.
 
-[[weiter-&gt;Kein Festival]]</tw-passagedata></tw-storydata>
+[[weiter-&gt;Kein Festival]]</tw-passagedata><tw-passagedata pid="38" name="Oh no" tags="" position="1973,1331" size="100,100">(set: $fahrzeug_bereit to true)
+(set: $xytrax_ok to false)
+*&quot;Es ist unsere einzige Chance, Xytrax. Oula wird bald zurück sein und dann müssen wir los, bevor die Wachen etwas bemerken.&quot;*
+Xytrax schaut dich an, *&quot;Kein Wort zu den anderen, versprich mir das.&quot;*
+*&quot;Na komm, Süsser, das wird ein Spass!&quot;*, der Dicke packt Xytrax am Arm und zieht ihn in seine Zelle. Einer der übriggebliebenen Mitglieder der schwulen Schwestern nickt dir zu, *&quot;Na los, mach deinen Anruf und dann bewegst du deinen Knackarsch hier weg.&quot;*
+
+[[Anruf tätigen-&gt;Mia anrufen]]</tw-passagedata><tw-passagedata pid="39" name="Kein Telefon" tags="" position="1831,1340" size="100,100">(set: $fahrzeug_bereit to false)
+*&quot;Oula sollte jeden Moment zurück sein. Es ist besser, wir gehen zu unserer Zelle und warten auf ihn.&quot;*
+Xytrax wirft dir einen erleichterten Blick zu.
+
+[[Gehe in deine Zelle um die anderen zu treffen.-&gt;Warten in der Zelle]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
