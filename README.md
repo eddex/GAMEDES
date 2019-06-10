@@ -3,9 +3,9 @@ Simple level design done in [GamePaint](https://gamepaint.itch.io/gamepaint) fol
 
 Play the game: https://gamepaint.itch.io/gamepaint?game=https://raw.githubusercontent.com/eddex/GAMEDES-GamePaint/master/Game.json
 
-<h1 align="center">
+<h4 align="center">
     <img  src="screenshot.png" width=70%>
-</h1>
+</h4>
 
 # Twine: Heavy Trip - Jailbreak.html
 
