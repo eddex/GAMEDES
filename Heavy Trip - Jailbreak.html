@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Heavy Trip - Jailbreak" startnode="4" creator="Twine" creator-version="2.3.1" ifid="B76A53F2-B567-4B16-9EA5-C9EDA2EF37EE" zoom="1" format="Harlowe" format-version="3.0.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="Heavy Trip - Jailbreak" startnode="4" creator="Twine" creator-version="2.3.1" ifid="B76A53F2-B567-4B16-9EA5-C9EDA2EF37EE" zoom="0.6" format="Harlowe" format-version="3.0.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
 
 
@@ -64,7 +64,7 @@ Im Süden des Zellentraktes befindet sich ein Durchgang welcher zu einem angrenz
 
 Du hast das Gefühl, als hätte dich die Wache sehr genau gemustert..
 
-[[zurück-&gt;Zellentrakt]]</tw-passagedata><tw-passagedata pid="8" name="Norden überprüfen" tags="" position="718,360" size="100,100">Die Tür im Norden führt ins freie. Hinder der Tür befinded sich ein Pfad, welcher zum Gebäude mit der Küche und dem Esssaal führt. Du erinnerst dich daran, dass man durch den Esssaal und die Küche laufen muss, um in das Wäschereigebäude zu gelangen.
+[[zurück-&gt;Zellentrakt]]</tw-passagedata><tw-passagedata pid="8" name="Norden überprüfen" tags="" position="666.3333333333334,355" size="100,100">Die Tür im Norden führt ins freie. Hinder der Tür befinded sich ein Pfad, welcher zum Gebäude mit der Küche und dem Esssaal führt. Du erinnerst dich daran, dass man durch den Esssaal und die Küche laufen muss, um in das Wäschereigebäude zu gelangen.
 
 [[zurück-&gt;Zellentrakt]]
 [[in den Esssaal gehen-&gt;Esssaal]]</tw-passagedata><tw-passagedata pid="9" name="Osten überprüfen" tags="" position="889,42" size="100,100">Im Osten befindet sich ebenfalls eine Tür, welche in den Aussenhof und zur Werkstatt führt. Wenn man keine Arbeit in der Werkstatt zu verrichten hat, kann man durch diese Tür nur zwischen 14:00 und 15:00 Uhr um in den Aussenhof zu gelangen.
@@ -76,7 +76,7 @@ Leider warst du bisher zu faul, um dir einen Job zu besorgen(if: $oula_wach)[ un
 *&quot;Wir sollten in den Esssaal gehen&quot;*, schlägt Lotvonen vor, *&quot;es ist bald Zeit fürs Frühstück!&quot;*
 
 (set: $with_buddies to true)
-[[gehe mit Xytrax und Lotvonen in den Esssaal-&gt;Esssaal]]</tw-passagedata><tw-passagedata pid="11" name="Esssaal" tags="" position="740,529" size="100,100">(if: $oula_wach)[
+[[gehe mit Xytrax und Lotvonen in den Esssaal-&gt;Esssaal]]</tw-passagedata><tw-passagedata pid="11" name="Esssaal" tags="" position="676.6666666666666,554" size="100,100">(if: $oula_wach)[
 (if: $with_buddies)[
 Du gehst mit Oula, Xytrax und Lotvonen in den Esssaal. Ihr nehmt euch den selben Tisch wie jeden Tag, in der hintersten Ecke.]
 (else:)[
@@ -105,7 +105,7 @@ Was willst du antworten?
 (set: $oula_wach to true)
 
 [[verlasse mit Oula die Zelle-&gt;Zellentrakt]]
-[[bleibe in der Zelle-&gt;Zeit für Frühstück]]</tw-passagedata><tw-passagedata pid="13" name="Zeit für Frühstück" tags="" position="565,462" size="100,100">Um Punkt 8:00 Uhr ertönt der chrosende Lautsprecher und die gelangweilte Stimme eines Wärters fordert euch auf, euch zum Esssaal zu begeben. Dafür müsst ihr durch die Tür im Norden den Zellentrakt verlassen.
+[[bleibe in der Zelle-&gt;Zeit für Frühstück]]</tw-passagedata><tw-passagedata pid="13" name="Zeit für Frühstück" tags="" position="420,488.6666666666667" size="100,100">Um Punkt 8:00 Uhr ertönt der chrosende Lautsprecher und die gelangweilte Stimme eines Wärters fordert euch auf, euch zum Esssaal zu begeben. Dafür müsst ihr durch die Tür im Norden den Zellentrakt verlassen.
 Hinder der Tür befinded sich ein Pfad, welcher zum Gebäude mit der Küche und dem Esssaal führt. Du erinnerst dich daran, dass man durch den Esssaal und die Küche laufen muss, um in das Wäschereigebäude zu gelangen.
 
 [[gehe mit Oula in den Esssaal-&gt;Esssaal]]</tw-passagedata><tw-passagedata pid="14" name="Kein Festival" tags="" position="825,2286" size="100,100">&lt;h1&gt;ENDE&lt;/h1&gt;
@@ -190,7 +190,7 @@ Ihr erreicht die Tür im Süden des Zellentraktes, Lotvonen schliesst die Tür a
 (if: $fahrzeug_bereit)[Auf dem Parkplatz seht ihr das Auto von Mia. Ihr geht darauf zu und steigt ein. Mia fährt sofort los.
 [[weiter-&gt;Win]]](else:)[&quot;Jetzt heisst es lauft was das Zeug hält!&quot;, ruft Xytrax. Ihr rennt los, so schnell ihr könnt. Ein Polizeiwagen fährt vor euch in die Einfahrt des Parkplatzes. Die Polizisten im Wagen sehen euch rennen und wittern sofort Verdacht. Sie Springen aus dem Wagen und ziehen ihre Waffen. &quot;Sofort stehen bleiben oder wir schiessen!&quot;
 [[Bleib stehen-&gt;Stehen bleiben]]
-[[Lauf weiter-&gt;Weiter laufen]]]</tw-passagedata><tw-passagedata pid="32" name="Stehen bleiben" tags="" position="2016,2183" size="100,100">Du bleibst wie angewurzelt stehen. &quot;So habe ich mir das aber nicht vorgestellt&quot;, stottert Lotvonen, der neben dir stehen geblieben ist.
+[[Lauf weiter-&gt;Weiter laufen]]]</tw-passagedata><tw-passagedata pid="32" name="Stehen bleiben" tags="" position="1949.3333333333333,2068" size="100,100">Du bleibst wie angewurzelt stehen. &quot;So habe ich mir das aber nicht vorgestellt&quot;, stottert Lotvonen, der neben dir stehen geblieben ist.
 &quot;Oula! Bleib stehen!&quot;, schreit Xytrax. Aber Oula hört nicht auf ihn. Er rennt geradewegs und schreiend auf die Polizisten zu, welche ihm ihre Waffen entgegen halten.
 (set: $running to false)
 [[weiter-&gt;Oula rennt weiter]]</tw-passagedata><tw-passagedata pid="33" name="Weiter laufen" tags="" position="2147,2179" size="100,100">Lotvonen und Xytrax bleiben stehen. Neben dir rennt Oula. Mit einem ohrenbetäubenden Schrei rennt er direkt auf die Polizisten zu.
@@ -230,7 +230,7 @@ Ihr erreicht die Tür im Süden des Zellentraktes, Lotvonen schliesst die Tür a
 
 Ihr habt es geschafft! Ihr seid aus dem Gefängnis entkommen und seid auf dem Weg zum Festival. Ein weiterer Legendärer Auftritt steht bevor!
 
-[[erneut spielen-&gt;Titel]]</tw-passagedata><tw-passagedata pid="35" name="Oula rennt weiter" tags="" position="1867,2182" size="100,100">&quot;STEHEN BLEIBEN HABE ICH GESAGT!&quot;, schreit einer der Polizisten.(if: $running)[ Du bleibst stehen.] Oula rennt weiter brüllend auf die Polizisten zu. Er ist nur noch wenige Meter von ihnen entfernt, da hörtst du einen lauten Knall.
+[[erneut spielen-&gt;Titel]]</tw-passagedata><tw-passagedata pid="35" name="Oula rennt weiter" tags="" position="1767,2020.3333333333333" size="100,100">&quot;STEHEN BLEIBEN HABE ICH GESAGT!&quot;, schreit einer der Polizisten.(if: $running)[ Du bleibst stehen.] Oula rennt weiter brüllend auf die Polizisten zu. Er ist nur noch wenige Meter von ihnen entfernt, da hörtst du einen lauten Knall.
 
 *&#96;&#96;*Peng!*&#96;&#96;*
 *&#96;&#96;*Peng!* *Peng!*&#96;&#96;*
@@ -317,9 +317,9 @@ Leider konntet ihr das Telefon nicht in euren Besitz bringen.
 [[Gehe zurück zu den &lt;em style=&quot;color: green&quot;&gt;Muchachos&lt;/em&gt;-&gt;Übergabe Telefon]]</tw-passagedata><tw-passagedata pid="50" name="Übergabe Telefon" tags="" position="1349,1354" size="100,100">Ihr geht zurück zu den &lt;em style=&quot;color: green;&quot;&gt;Muchachos&lt;/em&gt; und übergebt ihnen das Telefon.
 *&lt;em style=&quot;color: green;&quot;&gt;&quot;Ich bin beeindruckt, hätte nicht erwartet, dass ihr es schafft dem Alten das Telefon abzuknöpfen.&quot;&lt;/em&gt;*, sagt der Anführer mit einem überraschten Unterton. Er übergibt euch ein kleines Plastikfläschchen mit einer klaren Flüssigkeit. &lt;em style=&quot;color: green;&quot;&gt;*&quot;Nur wenig davon verwenden, sonst schläft euer Opfer dann für immer! Aber das ist ja nicht meine Sache.&quot;*&lt;/em&gt;, sagt er zum Abschied.
 
-[[Gehe zum Aussenhof-&gt;Aussenhof]]</tw-passagedata><tw-passagedata pid="51" name="Schlag" tags="" position="1257,1664" size="100,100">Du holst aus und schwingst den Knüppel in Richtung des Kopfes der Wache. (if: $gym)[Doch währen er durch die Luft saust, gleitet dir der Knüppel in einem plötzlichen Anfall von Schwäche aus den Händen. Das intensive Training macht sich in Form eines Lähmenden Muskelkaters bemerkbar. Die Holzstange saust am Kopf der Wache vorbei und donnert gegen die Wand. Die Wache dreht sich um und zieht ihre Waffe. *&quot;Alle auf den Boden und keine Bewegung! Alarm an Zentrale: Ich brauche Verstärkung in der Werkstatt!&quot;*
+[[Gehe zum Aussenhof-&gt;Aussenhof]]</tw-passagedata><tw-passagedata pid="51" name="Schlag" tags="" position="1230.3333333333333,1615.6666666666667" size="100,100">Du holst aus und schwingst den Knüppel in Richtung des Kopfes der Wache. (if: $gym)[Doch währen er durch die Luft saust, gleitet dir der Knüppel in einem plötzlichen Anfall von Schwäche aus den Händen. Das intensive Training macht sich in Form eines Lähmenden Muskelkaters bemerkbar. Die Holzstange saust am Kopf der Wache vorbei und donnert gegen die Wand. Die Wache dreht sich um und zieht ihre Waffe. *&quot;Alle auf den Boden und keine Bewegung! Alarm an Zentrale: Ich brauche Verstärkung in der Werkstatt!&quot;*
 [[Ihr wurdet geschnappt.-&gt;Kein Festival]]](else:)[Mit voller Wucht donnert die Holzstange auf den Schädel der Wache. Der Mann sackt reglos zu boden. Ihr zieht ihn auf seinen Stuhl neben der Tür und springt aus dem Ausgang in die Ladefläche des Lastwagens. Xytrax kommt als letzter in den Lastwagen und schliesst die Ausgangstür der Werkstatt hinter sich. Ihr versteckt euch zwischen der Ladung. Einige Minuten später fährt der Lastwagen los.
-[[Die Freiheit ruft!-&gt;Win]]]</tw-passagedata><tw-passagedata pid="52" name="Kippe einige Tropfen in die Tasse" tags="" position="1388,1700" size="100,100">Du kippst einige Tropfen in die Tasse.
+[[Die Freiheit ruft!-&gt;Win]]]</tw-passagedata><tw-passagedata pid="52" name="Kippe einige Tropfen in die Tasse" tags="" position="1394.6666666666667,1636.6666666666667" size="100,100">Du kippst einige Tropfen in die Tasse.
 Die Wache setzt sich wieder hin und beginnt an dem Kaffe zu schlürfen. Nach einigen Minuten setzt die erwünschte Wirkung ein. Du siehst wie die Wache immer weiter in ihrem Stuhl nach unten rutscht und schlussendlich hörbar beginnt zu scharchen.
 *&quot;Los jetzt&quot;*, sagt Xytrax, *&quot;bevor er wieder aufwacht!&quot;*
 Ihr springt aus dem Ausgang in die Ladefläche des Lastwagens. Xytrax kommt als letzter in den Lastwagen und schliesst die Ausgangstür der Werkstatt hinter sich. Ihr versteckt euch zwischen der Ladung. Einige Minuten später fährt der Lastwagen los.
@@ -331,7 +331,7 @@ Was willst du tun?
 [[Zieht den Plan durch und verschwindet-&gt;Wachmann tot]]</tw-passagedata><tw-passagedata pid="54" name="Hilfe geholt" tags="" position="1518,1664" size="100,100">Du springst auf und rennst zu dem Wachmann. Du nimmst sein Funkgerät und rufst nach Hilfe. Nur wenige Sekunden später stürmen eine ganze Horde von Wachleuten die Werkstatt. Der Wachmann kommt ins Krankenhaus und wie du später erfährst, hat er dank deinem Funkspruch überlebt.
 Alle Häftlinge werden für einige Tage in ihre Zellen gesperrt. Euer Plan auszubrechen, ist gescheitert.
 
-[[weiter-&gt;Kein Festival]]</tw-passagedata><tw-passagedata pid="55" name="Wachmann tot" tags="" position="1641,1677" size="100,100">Ihr springt über den reglosen Körper der Wache und aus dem Ausgang in die Ladefläche des Lastwagens. Xytrax kommt als letzter in den Lastwagen und schliesst die Ausgangstür der Werkstatt hinter sich. Ihr versteckt euch zwischen der Ladung. Einige Minuten später fährt der Lastwagen los.
+[[weiter-&gt;Kein Festival]]</tw-passagedata><tw-passagedata pid="55" name="Wachmann tot" tags="" position="1661,1690.3333333333333" size="100,100">Ihr springt über den reglosen Körper der Wache und aus dem Ausgang in die Ladefläche des Lastwagens. Xytrax kommt als letzter in den Lastwagen und schliesst die Ausgangstür der Werkstatt hinter sich. Ihr versteckt euch zwischen der Ladung. Einige Minuten später fährt der Lastwagen los.
 
 [[Die Freiheit ruft! Doch zu welchem Preis?-&gt;Win]]</tw-passagedata></tw-storydata>
 
